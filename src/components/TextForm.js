@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-
+import Mode from './Mode';
 function TextForm(props) {
     const [text, setText] = useState("Enter your text here...");
     console.log(text);
@@ -27,6 +27,7 @@ function TextForm(props) {
     };
   return (
     <>
+    <Mode mode="light" />
     <div className="container my-3">
       <h3 className="mb-4 mt-5">{props.desc}</h3>
       <div className="mb-3">
