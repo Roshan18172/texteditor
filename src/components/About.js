@@ -1,5 +1,9 @@
+import Mode from "./Mode";
+
 function About() {
   return (
+    <>
+    <Mode mode="light" />
     <div className="container my-3">
       <h1>About Us</h1>
       <p>
@@ -12,6 +16,7 @@ function About() {
         Developed by [Your Name], this project aims to demonstrate the capabilities of React in building interactive web applications.
       </p>
     </div>
+    </>
   );
 }
 export default About;
