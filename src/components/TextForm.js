@@ -3,27 +3,27 @@ import Mode from './Mode';
 function TextForm(props) {
     const [text, setText] = useState("Enter your text here...");
     console.log(text);
+    const handleUpperCase = () => {
+        let newText = text.toUpperCase();
+        setText(newText);
+    };
     const handleLowerCase = () => {
         let newText = text.toLowerCase();
         setText(newText);
-    };
-    const handleClearText = () => {
-        let newText =props.desc;
-        setText(newText);
-    };
-    const handleCopy = () => {
-        navigator.clipboard.writeText(text);
     };
     const handleExtraSpaces = () => {
         let newText = text.split(/[ ]+/);
         setText(newText.join(" "));
     };
+    const handleCopy = () => {
+        navigator.clipboard.writeText(text);
+    };
+    const handleClearText = () => {
+        let newText ="Enter your text here...";
+        setText(newText);
+    };
     const handleChange = (event) => {
         setText(event.target.value);
-    };
-    const handleUpperCase = () => {
-        let newText = text.toUpperCase();
-        setText(newText);
     };
   return (
     <>
