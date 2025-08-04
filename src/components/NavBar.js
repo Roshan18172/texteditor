@@ -14,11 +14,14 @@ function NavBar(props){
                     <a className="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" href="/" to="/About">About</Link>
+                    <Link className="nav-link active" href="/" to="/About">About</Link>
                     </li>
                 </ul>
                 </div>
             </div>
+            <Link className="navbar-brand" to="/">
+                <img src="text-editor-icon-4.jpg" alt="Logo" width="35" height="35" className="d-inline-block align-text-top" />
+             </Link>
         </nav>
     );
 }
