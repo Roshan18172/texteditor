@@ -19,7 +19,7 @@ function NavBar(props){
                 </ul>
                 </div>
             </div>
-            <div class="form-check form-switch mx-4">
+            <div className="form-check form-switch mx-4">
                 <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="switchCheckDefault"/>
                 <label className="form-check-label" htmlFor="switchCheckDefault"></label>
             </div>

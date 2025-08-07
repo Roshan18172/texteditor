@@ -72,12 +72,12 @@ function TextForm(props) {
         ></textarea>
       </div>
       <div className="row">
-      <button className="btn btn-primary mx-2 col" onClick={handleUpperCase}>Convert To UpperCase</button>
-      <button className="btn btn-secondary mx-2 col" onClick={handleLowerCase}>Convert To LowerCase</button>
-      <button className="btn btn-warning mx-2 col" onClick={handleExtraSpaces}>Remove Extra Spaces</button>
-      <button className="btn btn-info mx-2 col" onClick={handleCopy}>Copy Text</button>
-      <button className="btn btn-success mx-2 col" onClick={handleClearText}>Clear Text</button>
-      <button className="btn btn-dark mx-2 col" onClick={handleDownloadSummary}>Download Summary</button>
+      <button disabled={text.length===0} className="btn btn-primary mx-2 my-2 col" onClick={handleUpperCase}>Convert To UpperCase</button>
+      <button disabled={text.length===0} className="btn btn-secondary mx-2 my-2 col" onClick={handleLowerCase}>Convert To LowerCase</button>
+      <button disabled={text.length===0} className="btn btn-warning mx-2 my-2 col" onClick={handleExtraSpaces}>Remove Extra Spaces</button>
+      <button disabled={text.length===0} className="btn btn-info mx-2 my-2 col" onClick={handleCopy}>Copy Text</button>
+      <button className="btn btn-success mx-2 my-2 col" onClick={handleClearText}>Clear Text</button>
+      <button disabled={text.length===0} className="btn btn-dark mx-2 my-2 col" onClick={handleDownloadSummary}>Download Summary</button>
       </div>
     </div>
         <div className="container my-3">
