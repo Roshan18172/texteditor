@@ -3,7 +3,6 @@ import Mode from "./Mode";
 function About() {
   return (
     <>
-    <Mode mode="light" />
     <div className="container my-3">
       <h1>About Us</h1>
       <p>

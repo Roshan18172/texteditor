@@ -2,7 +2,7 @@ import props from 'prop-types';
 import { Link } from 'react-router-dom';
 function NavBar(props){
     return(
-        <nav className="navbar navbar-expand-lg bg-primary navbar-dark ">
+        <nav className={`navbar navbar-expand-lg bg-${props.mode} navbar-dark `}>
             <div className="container-fluid">
                 <a className="navbar-brand" href="/">{props.appName}</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,6 +18,10 @@ function NavBar(props){
                     </li>
                 </ul>
                 </div>
+            </div>
+            <div className="form-check form-switch mx-4">
+                <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="switchCheckDefault"/>
+                <label className="form-check-label" htmlFor="switchCheckDefault"></label>
             </div>
             <Link className="navbar-brand" to="/">
                 <img src="text-editor-icon-4.jpg" alt="Logo" width="35" height="35" className="d-inline-block align-text-top" />

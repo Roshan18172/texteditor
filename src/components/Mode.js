@@ -1,3 +1,6 @@
+
+//created but not used
+//This component is used to toggle between light and dark mode in the text editor application.
 import React, { useState } from 'react';
 function Mode(props) {
     const [mode, setMode] = useState(props.mode);
